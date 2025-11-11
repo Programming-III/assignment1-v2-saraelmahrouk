@@ -1,20 +1,19 @@
-#ifndef PERSON_H
-#define PERSON_H
+//
+// Created by sarag on 11/11/2025.
+//
 
-#include <string>
+#ifndef MILESTONE01_PERSON_H
+#define MILESTONE01_PERSON_H
 using namespace std;
-
-//#write Person class here
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
+class Person {
+private:
+    string name;
+    int id;
+public:
+    Person(string name, int id);
+    Person();
+    void display();
+    string getName();
+    int getId();
+};
+#endif //MILESTONE01_PERSON_H
