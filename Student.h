@@ -1,21 +1,19 @@
-#ifndef STUDENT_H
-#define STUDENT_H
+//
+// Created by sarag on 11/11/2025.
+//
 
-#include "Person.h"
+#ifndef MILESTONE01_STUDENT_H
+#define MILESTONE01_STUDENT_H
 #include <string>
-#using namespace std;
-//#write student class here
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
+#include "Person.h";
+using namespace std;
+class Student: public Person {
+private:
+    int yearLevel;
+    string  major;
+public:
+    Student(string name, int id, int yearLevel, string major);
+    Student();
+    void display();
+};
+#endif //MILESTONE01_INSTRUCTOR_H
